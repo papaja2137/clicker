@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kocia Strona</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="header-container"></div>
+    
+    <main class="main-content">
+        <div class="filter-container" id="filter-container"></div>
+        
+        <div class="cats-container" id="cats-container">
+            <!-- Tu będą karty kotów -->
+        </div>
+        
+        <div class="cat-details" id="cat-details">
+            <!-- Tu będą szczegółowe informacje o wybranym kocie -->
+        </div>
+        
+        <!-- Sekcja z filmem o kotach -->
+        <div class="video-section">
+            <h2>Film o kotach</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/bBl5c2DWvRo" title="Film o kotach" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+    
+    <div id="footer-container"></div>
+
+    <!-- Dane -->
+    <script src="data/cats.js"></script>
+    
+    <!-- Komponenty -->
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="components/catCard.js"></script>
+    <script src="components/catFilter.js"></script>
+    
+    <!-- Główny skrypt -->
+    <script src="js/script.js"></script>
+</body>
+</html> 

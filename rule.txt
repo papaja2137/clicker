@@ -1,0 +1,82 @@
+**Opis strony internetowej: "Kocia Strona"**
+
+Projekt strony internetowej o tematyce kotów będzie służył jako interaktywna platforma prezentująca informacje o różnych rasach kotów. Strona będzie umożliwiać użytkownikom wyszukiwanie i filtrowanie kotów według różnych kryteriów oraz uzyskiwanie szczegółowych informacji na temat każdej z ras. Strona ma być lekka, responsywna i przyjazna dla użytkownika, z naciskiem na przejrzystość oraz łatwość nawigacji.
+
+### Struktura projektu
+Struktura strony będzie oparta na modularnym podejściu, z rozdzieleniem na różne pliki i katalogi, co ułatwi zarządzanie projektem oraz umożliwi późniejsze rozszerzenia i modyfikacje.
+
+1. **`index.html`** - Główna strona, która będzie wyświetlać wszystkie dostępne rasy kotów w formie listy. Będzie to punkt wyjścia dla użytkowników, którzy chcą poznać szczegóły o każdej rasie.
+   
+2. **`css/`** - Katalog zawierający plik z głównymi stylami strony:
+   - **`style.css`** - Plik CSS, który będzie odpowiedzialny za wygląd strony. Użyte zostaną techniki takie jak Flexbox i CSS Grid, aby strona była w pełni responsywna i dobrze wyglądała na różnych urządzeniach (komputery, tablety, telefony).
+
+3. **`js/`** - Katalog zawierający pliki JavaScript, które będą odpowiadały za interaktywność strony:
+   - **`script.js`** - Główny plik JS, który będzie odpowiedzialny za dynamiczne ładowanie danych oraz implementację filtrowania ras kotów.
+   
+4. **`components/`** - Folder z plikami JavaScript, które będą zawierały komponenty strony:
+   - **`header.js`** - Komponent nagłówka, który będzie zawierał menu nawigacyjne oraz tytuł strony.
+   - **`footer.js`** - Komponent stopki, zawierający informacje kontaktowe lub odnośniki do innych stron (np. polityka prywatności).
+   - **`catCard.js`** - Komponent karty, na której będą wyświetlane informacje o każdej rasie kota.
+   - **`catFilter.js`** - Komponent umożliwiający filtrowanie ras kotów według wybranych kryteriów.
+   
+5. **`data/`** - Folder z danymi, które będą wykorzystywane przez stronę:
+   - **`cats.js`** - Plik z danymi o kotach (rasy, średni czas życia, typowe kolory, choroby, wielkość). Dane będą przechowywane w formacie obiektów JavaScript i używane do dynamicznego generowania zawartości na stronie.
+
+6. **`assets/`** - Katalog, który będzie zawierał zasoby multimedialne:
+   - **`images/`** - Folder z obrazkami poszczególnych ras kotów, które będą wyświetlane obok nazw ras w kartach.
+
+### Funkcjonalności strony
+Strona "Kocia Strona" będzie oferować następujące funkcje:
+
+1. **Strona główna z listą ras kotów:**
+   - Na głównej stronie użytkownicy zobaczą listę dostępnych ras kotów, które będą wyświetlane w formie kart. Każda karta będzie zawierała nazwę rasy oraz miniaturkę obrazka.
+
+2. **Filtrowanie kotów:**
+   - Użytkownicy będą mogli filtrować koty według następujących kryteriów:
+     - **Rasa** – użytkownik będzie mógł wybrać z listy ras kotów, które go interesują.
+     - **Kolor** – możliwość filtrowania kotów według koloru futra.
+     - **Wielkość** – możliwość wyboru kotów według ich wielkości (mały, średni, duży).
+
+3. **Kliknięcie na kartę kota:**
+   - Po kliknięciu na kartę z nazwą rasy użytkownik zobaczy szczegółowe informacje o wybranym kocie, w tym:
+     - **Średni czas życia** – informacja o długości życia danej rasy.
+     - **Typowe kolory** – informacje o najczęściej występujących kolorach futra.
+     - **Typowe choroby** – lista chorób, na które dana rasa jest podatna.
+     - **Wielkość** – informacje o typowych rozmiarach kotów danej rasy.
+     - **Dodatkowe informacje** – inne przydatne informacje, takie jak temperament czy wymagania pielęgnacyjne.
+
+### Technologie
+
+1. **HTML5:** 
+   - Struktura strony zostanie zaprojektowana zgodnie z najnowszymi standardami HTML5, zapewniając poprawne działanie na wszystkich nowoczesnych przeglądarkach.
+   
+2. **CSS3:**
+   - Strona będzie responsywna, co oznacza, że dostosuje się do różnych rozmiarów ekranów. Zastosowane zostaną techniksi CSS takie jak Flexbox i Grid do rozmieszczania elementów na stronie, co pozwoli uzyskać elastyczny i estetyczny układ.
+   
+3. **JavaScript (Vanilla JS):**
+   - Strona będzie wykorzystywać czysty JavaScript, bez użycia zewnętrznych bibliotek, co zapewni jej szybkość i lekkość. Skrypty będą odpowiedzialne za interaktywność strony, takie jak filtrowanie kotów oraz wyświetlanie szczegółowych informacji po kliknięciu na kartę kota.
+
+### Etapy pracy nad projektem
+
+1. **Utworzenie podstawowej struktury plików:**
+   - Tworzenie folderów i plików, takich jak `index.html`, plik CSS i JavaScript oraz struktura folderów dla komponentów, danych i zasobów.
+
+2. **Przygotowanie danych o kotach:**
+   - Zebranie i sformatowanie danych o rasach kotów, które będą wykorzystywane do generowania zawartości strony. Plik `cats.js` będzie zawierał obiekty z informacjami o rasach, ich cechach i zdjęciach.
+
+3. **Implementacja komponentów:**
+   - Tworzenie komponentów strony w JavaScript, które będą odpowiedzialne za wyświetlanie poszczególnych sekcji strony, takich jak nagłówek, stopka, karty kotów oraz filtr.
+
+4. **Utworzenie strony głównej:**
+   - Rozbudowa pliku `index.html` o strukturę strony, która będzie wyświetlała wszystkie rasy kotów w formie kart, z odpowiednimi obrazkami i nazwami.
+
+5. **Dodanie stylów CSS:**
+   - Projektowanie stylów CSS dla strony głównej, komponentów, kart kotów oraz formularzy filtrów. Stworzenie responsywnego układu strony.
+
+6. **Implementacja filtrowania:**
+   - Tworzenie funkcji filtrowania w JavaScript, które pozwolą użytkownikom na sortowanie kotów według rasy, koloru lub wielkości.
+
+7. **Testowanie i optymalizacja:**
+   - Testowanie strony na różnych urządzeniach i przeglądarkach, poprawa błędów oraz optymalizacja kodu pod kątem wydajności i szybkości ładowania strony.
+
+Projekt będzie skoncentrowany na zapewnieniu jak najlepszej jakości doświadczeń użytkowników, zarówno pod względem wizualnym, jak i funkcjonalnym.
